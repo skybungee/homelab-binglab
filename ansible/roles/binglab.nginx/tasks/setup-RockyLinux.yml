@@ -1,0 +1,19 @@
+---
+- name: RockyLinux | Install packages
+  package:
+    name: "{{ item }}"
+    state: present
+    allow_downgrade: yes
+  loop: "{{ nginx_packages_redhat }}"
+  notify:
+  - start nginx
+- name: copy the nginx config file and restart nginx
+  copy:
+    src: files/nginx.conf 
+    dest: /etc/nginx/nginx.conf
+  
+- name: RockyLinux | Start and Enable Services "{{ nginx_service }}"
+  service:
+    name: "{{ nginx_service }}"
+    state: started
+    enabled: yes

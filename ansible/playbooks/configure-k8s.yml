@@ -1,0 +1,8 @@
+---
+- name: Configure K8s
+  hosts: k8s
+  become: true
+  gather_facts: true
+  roles:
+    - binglab.k8s
+...

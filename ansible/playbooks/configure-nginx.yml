@@ -1,0 +1,8 @@
+---
+- name: Configure nginx
+  hosts: nginx
+  become: true
+  gather_facts: true
+  roles:
+    - binglab.nginx
+...

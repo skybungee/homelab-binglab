@@ -1,0 +1,7 @@
+nginx_service: nginx
+
+prerequisites_packages_redhat:
+  - yum-utils
+
+nginx_packages_redhat:
+  - nginx

@@ -1,0 +1,21 @@
+default vesamenu.c32
+prompt 0
+timeout 100
+MENU BACKGROUND pxe_splash_blue.png
+MENU title Binglab PXE Boot Menu
+
+label CentOS7
+  menu label ^  1) Install CentOS 7
+  menu passwd $1$sXiKzkus$Hqn/R/YTge8jL9tYbxJDT0
+  kernel /networkboot/CentOS7/vmlinuz
+  append initrd=/networkboot/CentOS7/initrd.img inst.repo=ftp://10.14.1.20/pub/pxe/CentOS7 ks=ftp://10.14.1.20/pub/pxe/centos7-ks.cfg
+
+label Rocky8
+  menu label ^  2) Install Rocky Linux 8.5
+  kernel /networkboot/Rocky8/vmlinuz
+  append initrd=/networkboot/Rocky8/initrd.img inst.repo=ftp://10.14.1.20/pub/pxe/Rocky8 inst.ks=ftp://10.14.1.20/pub/pxe/rocky8-k8s-ks.cfg
+
+Label Rocky-text
+  menu label ^  3) Install Rocky Linux 8.5 with ansible account
+  kernel /networkboot/Rocky8/vmlinuz
+  append initrd=/networkboot/Rocky8/initrd.img inst.repo=ftp://10.14.1.20/pub/pxe/Rocky8 inst.ks=ftp://10.14.1.20/pub/pxe/rocky8_ansible.cfg

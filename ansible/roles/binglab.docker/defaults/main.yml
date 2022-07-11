@@ -1,0 +1,15 @@
+docker_service: docker
+sysctl_config:
+  - name: net.ipv4.ip_forward
+    value: 1
+
+prerequisites_packages_redhat:
+  - yum-utils
+
+docker_packages_redhat:
+  - docker-ce-20.10.12-3.el{{ ansible_distribution_major_version }}.x86_64
+  - docker-ce-cli-20.10.12-3.el{{ ansible_distribution_major_version }}.x86_64
+  - containerd.io-1.4.12-3.1.el{{ ansible_distribution_major_version }}.x86_64
+
+docker_gpg_key_redhat: "https://download.docker.com/linux/centos/gpg"
+docker_repository_redhat: "https://download.docker.com/linux/centos/$releasever/$basearch/stable"

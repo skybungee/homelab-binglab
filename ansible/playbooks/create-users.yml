@@ -1,0 +1,7 @@
+---
+- name: Create users and groups
+  hosts: k8s
+  remote_user: root
+  gather_facts: true
+  roles:
+    - binglab.users

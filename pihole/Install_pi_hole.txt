@@ -1,0 +1,184 @@
+sudo raspi-config
+sudo apt-get update
+sudo apt-get upgrade
+apt-get install wget
+sudo apt-get install wget
+sudo wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.60.tar.gz
+tar zxvf bcm2835-1.60.tar.gz
+cd bcm2835-1.60/
+ls
+sudo ./configure
+sudo make
+sudo make check
+sudo make install
+sudo apt-get install wiringpi
+gpio -v
+sudo apt-get purge wiringpi
+hash -r
+sudo apt-get install git-core
+sudo apt-get update
+cd
+clear
+git clone git://git.drogon.net/wiringPi
+git clone https://github.com/WiringPi/WiringPi.git
+cd WiringPi/
+ls
+./build
+gpio -v
+sudo apt-get update
+sudo apt-get install python-pip
+sudo apt-get install python3-pip
+sudo apt-get install python3-pil
+sudo apt-get install python3-numpy
+sudo pip3 install RPi.GPIO
+sudo pip3 install spidev
+cd
+sudo git clone https://github.com/waveshare/e-Paper
+cd e-Paper/RaspberryPi\&JetsonNano/
+ls
+cd e-Paper/
+ls
+cd RaspberryPi_JetsonNano/
+ls
+cd python/
+ls
+cd examples/
+ls
+chmod 777 *
+sudo chmod 777 *
+ls
+./epd_lin02_test.py
+ls
+sudo python3 epd_2in66_test.py
+sudo python3 epd_2in7b_test.py
+ls
+sudo python3 epd_2in7b_V2_test.py
+sudo python3 epd_2in7_test.py
+cd
+curl -sSL https://install.pi-hole.net | bash
+ls
+git clone https://github.com/markmcintyre/pihole-eink-display.git
+ls
+cd pihole-eink-display/
+ls
+./main.py
+python3 ./main.py
+python3 main.py
+vi main.py
+ls
+cd ..
+history
+cd pihole-eink-display/
+ls
+vi main.py
+python3 main.py
+vi main.py
+python3 main.py
+wget https://www.waveshare.com/w/upload/f/f5/2.7inch-e-paper-hat-code.7z
+7za e 2.7inch-e-paper-hat-code.7z
+ls
+python3 main.py
+vi main.py
+ls
+cd ..
+ls
+cd e-Paper/
+ls
+cd ..
+ls
+cd pihole-eink-display/
+ls
+cd ..
+ls
+wget https://www.waveshare.com/w/upload/f/f5/2.7inch-e-paper-hat-code.7z
+7za e 2.7inch-e-paper-hat-code.7z
+cd RaspberryPi/
+cd epd2in7-demo
+7za e 2.7inch-e-paper-hat-code.7z
+ls
+cd RaspberryPi/
+ls
+python3 main.py
+chmod 777 main.py
+cd ..
+python3 main.py
+ls
+ls -altr
+cd e-paper
+cd RaspberryPi_JetsonNano/
+python3 epd_2in7-test.py
+python3 epd_2in7_test.py
+git clone https://github.com/markmcintyre/pihole-eink-display.git
+sudo git clone https://github.com/markmcintyre/pihole-eink-display.git
+cd pihole-eink-display/
+python3 main.py
+pip install epd-library
+python3 main.py
+vi main.py
+sudo vim main.py
+sudo nano main.py
+python3 main.py
+gpio readall
+ls
+vi main.py
+sudo nano main.py
+vi main.py
+python3 main.py
+sudo nano main.py
+python3 main.py
+sudo nano main.py
+python3 main.py
+sudo nano main.py
+cat /etc/resolv
+cat /etc/resolv.conf
+vi /etc/resolv.conf
+sudo nano /etc/resolv.conf
+cd e-Paper/
+cd pihole-eink-display/
+vi main.py
+sudo pihole -a -p
+cd pihole-eink-display/
+cd e-Paper/
+cd RaspberryPi_JetsonNano/
+cd python/
+cd examples/
+cat setup.py
+chmod 777 setup.py
+sudo chmod 777 setup.py
+sudo ./setup.py
+./epd_2in7_test.py
+cd pihole-eink-display/
+sudo nano main.py
+pyhon3 main.py
+python3 main.py
+nano test.py
+sudo nano test.py
+ls
+chmod 777 test.py
+sudo chmod 777 test.py
+python3 test.py
+ls
+cd ..
+ls
+nano epd_2in7_test.py
+ls
+cd pihole-eink-display/
+ls
+nano test.py
+cp test.py ../
+cd ..
+ls
+sudo nano anothertest.py
+ls
+sudo chmod 777 anothertest.py
+python3 anothertest.py
+sudo nano anothertest.py
+ls
+cd pihole-eink-display/
+ls
+sudo mv fonts/ ~/e-Paper/RaspberryPi_JetsonNano/python/examples/
+python3 anothertest.py
+cd waveshare_epd/
+sudo nano epd2in7.py
+cat readme_rpi_EN.txt
+python3 epd_2in7_test.py
